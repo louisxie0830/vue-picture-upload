@@ -1,4 +1,4 @@
-import vPictureUpload from './components/vue-picture-upload';
+import vPictureUpload from './components/vue-picture-upload.vue';
 
 var VuePictureUpload = {
     install(Vue, options) {

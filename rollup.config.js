@@ -4,12 +4,14 @@ import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 
 export default {
-    entry: './src/vue-qriously.js',
-    dest: './dist/vue-qriously.js',
+    entry: './src/vue-picture-upload.js',
+    dest: './dist/vue-picture-upload.js',
 
     plugins: [
         resolve(),
-        vue(),
+        vue({
+          css: 'dist/vue-picture-upload.css'
+        }),
         commonjs(),
         babel({
             exclude: 'node_modules/**',
@@ -18,5 +20,5 @@ export default {
     ],
 
     format: 'umd',
-    moduleName: 'vue-qriously'
+    moduleName: 'vue-picture-upload'
 }
