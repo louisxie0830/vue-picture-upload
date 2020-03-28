@@ -1,0 +1,36 @@
+{
+  "name": "vue-qriously",
+  "version": "1.1.1",
+  "description": "Component to picture upload for Vue.js 2.0",
+  "main": "dist/vue-picture-upload.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "keywords": [
+    "vue",
+    "component",
+    "picture upload"
+  ],
+  "author": "Louis Xie",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^2.1.10"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "qrious": "^4.0.2",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-vue": "^2.4.0"
+  }
+}
