@@ -4,7 +4,9 @@
   "description": "Component to picture upload for Vue.js 2.0",
   "main": "dist/vue-picture-upload.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "dev": "npm run build -- -w & poi demo/index.js",
+    "format": "prettier {src,demo}/**/*.vue {src,demo}/**/*.js **/*.md **/*.json --write"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,12 @@
   },
   "devDependencies": {
     "babel-preset-es2015-rollup": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.1",
+    "poi": "^12.7.5",
+    "prettier": "^2.0.2",
     "qrious": "^4.0.2",
     "rollup": "^0.41.6",
     "rollup-plugin-babel": "^2.7.1",
